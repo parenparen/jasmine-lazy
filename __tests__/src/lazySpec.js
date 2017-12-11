@@ -1,5 +1,6 @@
-describe('lazy', function (){
+import lazy from '../../src/lazy.js';
 
+describe('lazy', function (){
   lazy('context', function () {
     return 'original';
   });
