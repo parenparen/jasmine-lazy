@@ -7,7 +7,6 @@ Forked from https://github.com/jthibeaux/jasmine-lazy and updated to support ES6
 
 ```
 import lazy from 'jasmine-lazy';
-import subject from './path/to/subject.js';
 
 describe('lazy', function (){
   lazy('context', function () {
