@@ -1,10 +1,11 @@
 {
   "name": "jasmine-lazy",
   "description": "Lazy load context variables for jasmine specs (similar to rspec let for ruby specs)",
-  "main": "./src/lazy.js",
+  "main": "./dist/lazy.js",
   "scripts": {
     "test": "./node_modules/jest/bin/jest.js",
-    "autotest": "./node_modules/jest/bin/jest.js --watch"
+    "autotest": "./node_modules/jest/bin/jest.js --watch",
+    "build": "./node_modules/babel-cli/bin/babel.js src/lazy.js > dist/lazy.js"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,7 @@
   ],
   "author": "Derek Mueller",
   "license": "MIT",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-jest": "^21.2.0",
